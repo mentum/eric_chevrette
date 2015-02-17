@@ -1,0 +1,67 @@
+header {
+    position: relative;
+    height: 100vh;
+    z-index: -1;
+    .cover-image, .blur {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+    }
+    .cover-image {
+        background-image: url(../images/wolf_city.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    .blur {
+        background-color: whitesmoke;
+        opacity: 0;
+    }
+    .person-header {
+        padding-top: 25vh;
+        img {
+            border: 10px solid whitesmoke;
+            min-width: 225px;
+            width: 225px;
+            float: right;
+        }
+        h1 {
+            margin: 10px 0 10px 0;
+            color: whitesmoke;
+        }
+        h3 {
+            margin: 0;
+            color: whitesmoke;
+        }
+    }
+}
+
+@media (max-width: $screen-md) {
+    header .person-header img {
+        min-width: 0;
+    }
+}
+
+@media (max-width: $screen-sm) {
+    header .person-header {
+        padding-top: 8vh;
+        img {
+            margin: auto;
+            float: none;
+        }
+        .animated {
+            padding-top: 7vh;
+        }
+    }
+}
+
+@media (max-width: $screen-xs) {
+    header {
+        .cover-image {
+            background-position: top center;
+            background-size: 350%;
+        }
+        .person-header img {
+            width: 60%;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+section {
+    padding: 50px 0;
+    &.blue {
+        background-color: $main-blue;
+        .section-heading .divider:after {
+            background: $white;
+        }
+    }
+    &.white {
+        background-color: $white;
+        .section-heading .divider:after {
+            background: $wolf-dark-gray;
+        }
+    }
+
+}
+
+@import 'sections/about';
+@import 'sections/features';
+@import 'sections/market';

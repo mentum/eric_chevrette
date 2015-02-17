@@ -1,0 +1,27 @@
+section#about{
+    background-color: white;
+    .about-item {
+        i.fa, i.glyphicon {
+            border: none;
+            background: $main-blue;
+            color: #fff;
+        }
+        h4 {
+            color: $main-blue;
+        }
+        i.glyphicon{
+            font-family: 'Glyphicons Halflings';
+        }
+        &:hover {
+            i.fa, i.glyphicon {
+                background: $main-blue;
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-sm) {
+    section#about .about-item {
+        margin-bottom: 50px;
+    }
+}

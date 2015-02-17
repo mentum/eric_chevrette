@@ -1,0 +1,12 @@
+# Site settings
+description: > # Charles pedneault est un conseillé financier hors paire avec une vision du monde hors du commun. Ce site web est propulsé par mentum. 
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://charlespedneault.com" # the base hostname & protocol for your site
+
+exclude: ["README.md", "LICENSE.md", "Gemfile"]
+
+sass:
+    sass_dir: assets/css/_sass
+
+# Build settings
+markdown: kramdown

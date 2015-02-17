@@ -1,0 +1,30 @@
+<nav class="container-fluid hidden-sm hidden-xs">
+    <div class="row">
+        <div class="col-md-11 col-md-offset-1">
+            <ul>
+                <li><a class="hover-bg shadow" href="#mission">mission</a></li>
+                <li><a class="hover-bg shadow" href="#market">clientèle</a></li>
+                <li><a class="hover-bg shadow" href="#features">démarche</a></li>
+                <li><a class="hover-bg shadow" href="#about">domaines d'expertise</a></li>
+                <li><a class="hover-bg shadow" href="#contact">contact</a></li>
+                <li><a href="http://ca.linkedin.com/pub/charles-pedneault-b-a-a/44/5b8/786" class="fa fa-linkedin-square shadow"></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header class="container-fluid">
+    <div class="row">
+        <div class="cover-image"></div>
+        <div class='blur'></div>
+        <div class="person-header">
+            <div class="col-xs-12 col-sm-3 col-md-2 col-md-offset-1 text-center">
+                <img class="img-responsive img-circle" src="{{ site.data.person.photo_url }}">
+            </div>
+            <div class="col-xs-12 col-sm-9 animated fadeInLeft">
+                <h3 class="shadow">Bonjour, je suis</h3>
+                <h1 class="shadow">{{ site.data.person.name }}</h1>
+                <h3 class="shadow">{{ site.data..person.profesional_title }}, partenaire de {{ site.data.institution.name }}</h3>
+            </div>
+        </div>
+    </div>
+</header>

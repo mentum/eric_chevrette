@@ -1,0 +1,20 @@
+section#features .media {
+    padding: 15px 0;
+    .media-body h4 {
+        color: $main-blue;
+    }
+    div.number {
+        border: 2px solid $main-blue;
+        color: #fff;
+        background: $main-blue;
+        @include border-radius(50%);
+        width: 2.6em;
+        height: 2.6em;
+        line-height: 2.4em;
+        font-size: 28px;
+        text-align: center;
+    }
+    &.feature {
+        min-height: 85px;
+    }
+}
