@@ -2,7 +2,7 @@ section#market{
     padding-bottom: 0;
     .container-fluid{
         padding: 0;
-        .col-sm-4{
+        .col-sm-6 {
             padding: 0;
             position: relative;
             span.caption{
@@ -10,6 +10,7 @@ section#market{
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                flex-direction: column;
                 width: 100%;
                 height: 100%;
                 top: 0;
@@ -19,13 +20,19 @@ section#market{
                     font-size: 2.5rem;
                     font-weight: lighter;
                     text-transform: uppercase;
-                    opacity: 0;
                     padding: 0 25px;
                     margin: 0;
                 }
+                ul {
+                    text-align: left;
+                    margin-top: 25px;
+                }
+                p, ul {
+                    opacity: 0;
+                }
                 &:hover{
                     background-color: rgba($main-blue, 0.55);
-                    p {
+                    p, ul {
                         opacity: 1;
                         text-shadow: $main-blue 0px 0px 20px;
                         @include transition($delay: 0.3s);
@@ -40,11 +47,27 @@ section#market{
 }
 
 @media (max-width: $screen-sm) {
-    section#market .container-fluid .col-sm-4 span.caption {
-        background-color: rgba($main-blue, 0.55);
-        p {
-            opacity: 1;
-            text-shadow: $main-blue 0px 0px 20px;
+    section#market .container-fluid {
+        .col-sm-6 {
+            span.caption {
+                background-color: rgba($main-blue, 0.55);
+                p, ul {
+                    opacity: 1;
+                    text-shadow: $main-blue 0px 0px 20px;
+                }
+            }
         }
+    }
+}
+
+@media (min-width: $screen-md+1) and (max-width: $screen-lg) {
+    section#market .container-fluid span.caption ul {
+        display: none;
+    }
+}
+
+@media (max-width: $screen-xs) {
+    section#market .container-fluid span.caption ul {
+        display: none;
     }
 }

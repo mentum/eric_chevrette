@@ -1,0 +1,32 @@
+section#independent-consultant {
+    background-color: white;
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h3 {
+        font-size: 3.5rem;
+    }
+    .recommendation-item {
+        i.fa, i.glyphicon {
+            border: none;
+            background: $main-blue;
+            color: #fff;
+            border-radius: 50%;
+            padding: 35px;
+            @include transition($timing-function:ease-in-out);
+        }
+        h4 {
+            color: $main-blue;
+        }
+        i.glyphicon{
+            font-family: 'Glyphicons Halflings';
+        }
+        &:hover {
+            i.fa, i.glyphicon {
+                background: $main-blue;
+            }
+        }
+    }
+}

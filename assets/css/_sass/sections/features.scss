@@ -1,20 +1,31 @@
-section#features .media {
-    padding: 15px 0;
-    .media-body h4 {
-        color: $main-blue;
+section#features {
+    .media {
+        padding: 15px 0;
+        .media-body h4 {
+            color: $main-blue;
+        }
+        div.number {
+            border: 2px solid $main-blue;
+            color: #fff;
+            background: $main-blue;
+            @include border-radius(50%);
+            width: 2.6em;
+            height: 2.6em;
+            line-height: 2.4em;
+            font-size: 28px;
+            text-align: center;
+        }
+        &.feature {
+            min-height: 85px;
+        }
     }
-    div.number {
-        border: 2px solid $main-blue;
-        color: #fff;
-        background: $main-blue;
-        @include border-radius(50%);
-        width: 2.6em;
-        height: 2.6em;
-        line-height: 2.4em;
-        font-size: 28px;
-        text-align: center;
-    }
-    &.feature {
-        min-height: 85px;
+    .section-heading {
+        margin-bottom: 0;
+        .col-sm-6:first-child .media-heading {
+            margin-right: 90px;
+        }
+        .col-sm-6:last-child .media-heading {
+            margin-left: 80px;
+        }
     }
 }
