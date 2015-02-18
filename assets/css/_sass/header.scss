@@ -8,9 +8,10 @@ header {
         height: 100%;
     }
     .cover-image {
-        background-image: url(../images/wolf_city.jpg);
+        background-image: url(../images/city_cover.jpg);
         background-size: cover;
         background-position: center center;
+        opacity: 0.8;
     }
     .blur {
         background-color: whitesmoke;

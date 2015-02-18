@@ -1,6 +1,6 @@
 section#features {
     .media {
-        padding: 15px 0;
+        margin: 0 0 25px 0;
         .media-body h4 {
             color: $main-blue;
         }
@@ -19,13 +19,22 @@ section#features {
             min-height: 85px;
         }
     }
-    .section-heading {
-        margin-bottom: 0;
-        .col-sm-6:first-child .media-heading {
-            margin-right: 90px;
+    h3 {
+        color: $main-blue;
+        &:hover {
+            color: $main-blue;
         }
-        .col-sm-6:last-child .media-heading {
-            margin-left: 80px;
+    }
+}
+
+@media (max-width: $screen-sm) {
+    section#features {
+        h3 {
+            text-align: center;
+            font-size: 3rem;
+        }
+        .row .col-sm-5:last-child {
+            margin-top: 100px;
         }
     }
 }

@@ -1,21 +1,21 @@
 section#independent-consultant {
     background-color: white;
-    .row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
     h3 {
         font-size: 3.5rem;
+    }
+    .section-heading h3 {
+        margin-top:50px;
     }
     .recommendation-item {
         i.fa, i.glyphicon {
             border: none;
             background: $main-blue;
             color: #fff;
-            border-radius: 50%;
             padding: 35px;
+            @include border-radius(50%);
             @include transition($timing-function:ease-in-out);
+            width: 104px;
+            padding: 35px;
         }
         h4 {
             color: $main-blue;
@@ -28,5 +28,6 @@ section#independent-consultant {
                 background: $main-blue;
             }
         }
+        margin-bottom: 50px;
     }
 }

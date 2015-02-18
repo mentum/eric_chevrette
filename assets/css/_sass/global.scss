@@ -5,8 +5,6 @@
     transition: $property $duration $timing-function $delay;
 }
 
-
-
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;

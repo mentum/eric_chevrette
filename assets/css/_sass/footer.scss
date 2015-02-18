@@ -62,7 +62,7 @@ footer {
 
 @media (min-width: $screen-xs + 1) {
     footer .contact {
-        @include calc(margin-left, "50% - 200px");
+        @include calc(margin-left, "50% - 180px");
         a, p, span {
             font-size: 2rem;
         }

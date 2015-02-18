@@ -1,51 +1,6 @@
 <footer id="contact" class="container-fluid blue">
     <div class="row">
-        <div class="col-md-6">
-            <div class="tp-banner-container">
-                <div class="tp-banner">
-                    <ul>
-                        <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
-                            <div class="tp-caption lfl fadeout"
-                                 data-x="left"
-                                 data-y="bottom"
-                                 data-hoffset="0"
-                                 data-voffset="0"
-                                 data-speed="500"
-                                 data-start="700"
-                                 data-easing="Power4.easeOut">
-                                <img class="image-slider" src="assets/images/startup_weekend.jpg" alt="browsers">
-                            </div>
-                        </li>
-                        <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1500" >
-                            <div class="tp-caption lfl fadeout"
-                                 data-x="left"
-                                 data-y="bottom"
-                                 data-hoffset="0"
-                                 data-voffset="0"
-                                 data-speed="500"
-                                 data-start="700"
-                                 data-easing="Power4.easeOut">
-                                <img class="image-slider" src="assets/images/globbetrotter.jpg" alt="">
-                            </div>
-                        </li>
-
-                        <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1500" >
-                            <div class="tp-caption lfl fadeout"
-                                 data-x="left"
-                                 data-y="bottom"
-                                 data-hoffset="0"
-                                 data-voffset="0"
-                                 data-speed="500"
-                                 data-start="700"
-                                 data-easing="Power4.easeOut">
-                                <img class="image-slider" src="assets/images/snowborder.jpg" alt="">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
+        <div class="col-md-12">
             <div class="section-heading inverse scrollpoint sp-effect3">
                 <h2>Contactez moi</h2>
                 <div class="divider"></div>
@@ -60,25 +15,22 @@
                     <i class="fa fa-phone"></i>{{ site.data.person.phone.formatted }}
                 </a>
             </div>
-                <div class="contact address">
-                    <a href="{{ site.data.person.address.google_maps_url }}" target="_blank" class="scrollpoint sp-effect4">
-                        <i class="fa fa-map-marker"></i>
+            <div class="contact address">
+                <a href="{{ site.data.person.address.google_maps_url }}" target="_blank" class="scrollpoint sp-effect4">
+                    <i class="fa fa-map-marker"></i>
                         <span>
-                            {{site.data.person.address.street_address}},
+                            {{site.data.person.address.street_address}},&nbspbureau&nbsp{{site.data.person.address.office}}
                         </span>
-                        <p>
-                            bureau&nbsp{{site.data.person.address.office}}
-                        </p>
-                        <p>
-                            {{site.data.person.address.city}} {{site.data.person.address.postal_code}}
-                        </p>
-                    </a>
-                </div>
+                    <p>
+                        {{site.data.person.address.city}} {{site.data.person.address.postal_code}}
+                    </p>
+                </a>
+            </div>
         </div>
     </div>
     <div class="row low-footer">
         <a class="pull-right" href="{{site.data.institution.website}}" target="_blank">
-            <img width="100" src="{{site.data.institution.logo_url}}">            
+            <img width="100" src="{{site.data.institution.logo_url}}">
         </a>
     </div>
 </footer>
