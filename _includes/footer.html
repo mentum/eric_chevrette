@@ -43,8 +43,10 @@
         </div>
     </div>
     <div class="row low-footer">
-        <a class="pull-right" href="{{site.data.institution.website}}" target="_blank">
-            <img width="100" src="{{site.data.institution.logo_url}}">
+    {% for institution in site.data.institutions %}
+        <a class="pull-right" href="{{institution.website}}" target="_blank">
+            <img width="100" src="{{institution.logo_url}}">
         </a>
+    {% endfor %}
     </div>
 </footer>

@@ -1,24 +1,50 @@
 section#independent-consultant {
     background-color: white;
+
     h3 {
         font-size: 3.5rem;
+        margin: 25px 0;
     }
-    .section-heading h3 {
-        margin-top:50px;
+    span {
+        font-size: 2rem;
+        color: $main-blue;
+        font-weight: lighter;
+        @include calc(max-width, "100% - 60px");
     }
+
+    .content .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+        &:last-child .col-xs-12 {
+            margin: 10px 0;
+            display: flex;
+        }
+    }
+
     .recommendation-item {
         i.fa, i.glyphicon {
             border: none;
             background: $main-blue;
             color: #fff;
-            padding: 35px;
             @include border-radius(50%);
             @include transition($timing-function:ease-in-out);
-            width: 104px;
-            padding: 35px;
-        }
-        h4 {
-            color: $main-blue;
+            padding: 10px;
+            width: 50px;
+            line-height: 30px;
+            &.fa-angle-double-down:before {
+                margin-left: 6px;
+            }
+            &.fa-shield:before {
+                margin-left: 9px;
+            }
+            &.fa-random:before {
+                margin-left: 7px;
+            }
+            &:before {
+                margin-top: 1px;
+            }
         }
         i.glyphicon{
             font-family: 'Glyphicons Halflings';
@@ -28,6 +54,12 @@ section#independent-consultant {
                 background: $main-blue;
             }
         }
-        margin-bottom: 50px;
+//        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: $screen-sm) {
+    section#independent-consultant .content .row {
+        display: block;
     }
 }
