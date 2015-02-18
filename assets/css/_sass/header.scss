@@ -58,8 +58,7 @@ header {
 @media (max-width: $screen-xs) {
     header {
         .cover-image {
-            background-position: top center;
-            background-size: 350%;
+            opacity: 0.4;
         }
         .person-header img {
             width: 60%;
