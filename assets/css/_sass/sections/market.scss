@@ -68,7 +68,7 @@ section#market{
 }
 
 @media (max-width: $screen-xs) {
-    section#market .container-fluid span.caption {
+    section#market .container-fluid .col-sm-6 span.caption {
         ul {
             display: none;
         }
