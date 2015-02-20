@@ -2,7 +2,7 @@ section#market{
     padding-bottom: 0;
     .container-fluid{
         padding: 0;
-        .col-sm-6 {
+        .col-sm-6, .col-sm-4 {
             padding: 0;
             position: relative;
             span.caption{
@@ -49,7 +49,7 @@ section#market{
 
 @media (max-width: $screen-sm) {
     section#market .container-fluid {
-        .col-sm-6 {
+        .col-sm-6, .col-sm-4 {
             span.caption {
                 background-color: rgba($main-blue, 0.55);
                 p, ul {
@@ -68,7 +68,7 @@ section#market{
 }
 
 @media (max-width: $screen-xs) {
-    section#market .container-fluid .col-sm-6 span.caption {
+    section#market .container-fluid .col-sm-6 span.caption, section#market .container-fluid .col-sm-4 span.caption {
         ul {
             display: none;
         }
