@@ -1,40 +1,77 @@
 section#features {
-    .media {
-        margin: 0 0 25px 0;
-        .media-body h4 {
-            color: $main-blue;
-        }
-        div.number {
-            border: 2px solid $main-blue;
-            color: #fff;
-            background: $main-blue;
-            @include border-radius(50%);
-            width: 2.6em;
-            height: 2.6em;
-            line-height: 2.4em;
-            font-size: 28px;
-            text-align: center;
-        }
-        &.feature {
-            min-height: 85px;
+    h3 {
+        font-size: 3.5rem;
+        margin: 25px 0;
+    }
+    span {
+        font-size: 2rem;
+        color: $main-blue;
+        font-weight: lighter;
+        @include calc(max-width, "100% - 60px");
+    }
+
+    .content .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+        .col-xs-12 {
+            margin: 10px 0;
+//            display: flex;
         }
     }
-    h3 {
-        color: $main-blue;
-        &:hover {
-            color: $main-blue;
+
+    .recommendation-item {
+        i.fa, i.glyphicon, div.number {
+            border: none;
+            background: $main-blue;
+            color: #fff;
+            @include border-radius(50%);
+            @include transition($timing-function:ease-in-out);
+            padding: 10px;
+            width: 50px;
+            line-height: 30px;
+            margin-right:10px;
+            &.fa-angle-double-down:before {
+                margin-left: 6px;
+            }
+            &.fa-shield:before {
+                margin-left: 9px;
+            }
+            &.fa-random:before {
+                margin-left: 7px;
+            }
+            &.fa-users:before {
+                margin-left: 5px;
+            }
+            &.fa-sitemap:before {
+                margin-left: 5px;
+            }
+            &.fa-check-square-o:before {
+                margin-left: 7px;
+            }
+            &:before {
+                margin-top: 1px;
+            }
+            &.number-pull-left {
+                font-size: 20px;
+                padding-left: 19px;
+            }
         }
+        i.glyphicon{
+            font-family: 'Glyphicons Halflings';
+        }
+        &:hover {
+            i.fa, i.glyphicon {
+                background: $main-blue;
+            }
+        }
+        //        margin-bottom: 50px;
     }
 }
 
 @media (max-width: $screen-sm) {
-    section#features {
-        h3 {
-            text-align: center;
-            font-size: 3rem;
-        }
-        .row .col-sm-5:last-child {
-            margin-top: 100px;
-        }
+    section#features .content .row {
+        display: block;
     }
 }

@@ -47,6 +47,15 @@ footer {
         &.address p {
             margin: -6px 0 8px 57px;
         }
+        &.secretary {
+            font-size: 2rem;
+            color: white;
+            h4 {
+                font-size: 1.7rem;
+                font-weight: normal;
+                padding-bottom: 15px;
+            }
+        }
     }
     .low-footer {
         background-color: darken($main-blue, 2%);
