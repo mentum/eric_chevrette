@@ -15,9 +15,9 @@ section#features {
         align-items: center;
         justify-content: center;
         margin-bottom: 50px;
-        .col-xs-12 {
+        &:last-child .col-xs-12 {
             margin: 10px 0;
-//            display: flex;
+            display: flex;
         }
     }
 
