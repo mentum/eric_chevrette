@@ -65,10 +65,10 @@ footer {
             line-height: 100px;
             img {
                 width: 100px;
-            }
-            &[src*=capitalweb] {
-                width: auto;
-                height: 85px;
+                &[src*=capitalweb] {
+                    width: auto;
+                    height: 85px;
+                }
             }
         }
     }
